@@ -18,8 +18,8 @@ void print_arr(long double arr[], int length) {
 
 int find_x(long double x[2]) {
     long double a, b, c;
-    printf("Введи коэффициенты:\n");
-    printf("а: ");
+    printf("Р’РІРµРґРё РєРѕСЌС„С„РёС†РёРµРЅС‚С‹:\n");
+    printf("Р°: ");
     scanf_s("%Lf", &a);
     printf("b: ");
     scanf_s("%Lf", &b);
@@ -27,7 +27,7 @@ int find_x(long double x[2]) {
     scanf_s("%Lf", &c);
 
     if (a == 0) {
-        printf("нельзя посчитать корни уравнения");
+        printf("РЅРµР»СЊР·СЏ РїРѕСЃС‡РёС‚Р°С‚СЊ РєРѕСЂРЅРё СѓСЂР°РІРЅРµРЅРёСЏ");
         exit(0);
     }
 
@@ -57,7 +57,7 @@ int main() {
 
     int len = find_x(x);
 
-    printf("Корни уранения: ");
+    printf("РљРѕСЂРЅРё СѓСЂР°РЅРµРЅРёСЏ: ");
     print_arr(x, len);
 
     return 0;
